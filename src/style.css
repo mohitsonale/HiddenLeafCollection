@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --primary: #8b5cf6;
+  --primary-hover: #7c3aed;
+  --bg-dark-beige: #daccbc;
+  /* Darker beige as requested */
+  --navbar-light-black: #1c1917;
+  /* Light black for navbar */
+  --footer-black: #0a0a0a;
+  --text-primary: #1c1917;
+  --text-secondary: #57534e;
+}
+
+body {
+  @apply bg-[#daccbc] text-[#1c1917] antialiased;
+  min-height: 100vh;
+}
+
+/* Subtle, low-impact animations */
+.animate-soft-in {
+  animation: softFadeIn 0.3s ease-out forwards;
+}
+
+@keyframes softFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Normal animations for Framer Motion */
+export const lowAnimation= {
+  initial: {
+    opacity: 0
+  }
+
+  ,
+  animate: {
+    opacity: 1
+  }
+
+  ,
+  transition: {
+    duration: 0.3
+  }
+}
+
+;
