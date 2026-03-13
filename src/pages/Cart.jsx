@@ -1,7 +1,6 @@
-
 import { Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Trash2, ShoppingBag, ArrowRight, Minus, Plus, ChevronLeft } from 'lucide-react'
+import { Trash2, ShoppingBag, ArrowRight, ChevronLeft } from 'lucide-react'
 import { useCart } from '../context/CartContext'
 
 export default function Cart() {
@@ -36,7 +35,7 @@ export default function Cart() {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
-                {/* Cart Items */}
+             
                 <div className="lg:col-span-8 space-y-4">
                     <AnimatePresence mode="popLayout">
                         {cart.map(item => (
@@ -67,7 +66,6 @@ export default function Cart() {
                     </AnimatePresence>
                 </div>
 
-                {/* Summary */}
                 <div className="lg:col-span-4">
                     <div className="bg-stone-900 rounded-[2.5rem] p-8 sm:p-10 text-white space-y-10 sticky top-32 shadow-2xl">
                         <h3 className="text-xl font-black uppercase tracking-tighter">Order Summary</h3>

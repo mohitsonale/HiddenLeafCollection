@@ -1,7 +1,5 @@
-import React from 'react'
 import { useState } from 'react'
-import { motion } from 'framer-motion'
-import { ShoppingBag, ArrowLeft, Search, Eye, Truck, CheckCircle, Clock } from 'lucide-react'
+import { ArrowLeft, Eye, Truck, CheckCircle, Clock } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { useAuth } from '../../context/AuthContext'
 

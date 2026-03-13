@@ -10,7 +10,7 @@ export default function Footer() {
             <div className="container mx-auto px-6 sm:px-8 max-w-7xl">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-12 sm:gap-20 mb-20">
 
-                    {/* Brand Focus */}
+                  
                     <div className="lg:col-span-4 space-y-8">
                         <Link to="/" className="text-xl sm:text-2xl font-black text-white uppercase tracking-tighter flex items-center space-x-2">
                             <div className="w-2 h-6 bg-purple-500 rounded-full" />
@@ -26,7 +26,7 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    {/* Links Matrix */}
+ 
                     <div className="lg:col-span-2 space-y-6">
                         <h3 className="text-[10px] font-black text-white uppercase tracking-[0.4em]">Store</h3>
                         <ul className="space-y-4">
@@ -55,7 +55,7 @@ export default function Footer() {
                         </ul>
                     </div>
 
-                    {/* Contact Matrix */}
+                 
                     <div className="lg:col-span-4 space-y-6">
                         <h3 className="text-[10px] font-black text-white uppercase tracking-[0.4em]">Connect</h3>
                         <ul className="space-y-6">
@@ -90,7 +90,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                {/* Bottom Bar */}
+           
                 <div className="pt-10 border-t border-stone-800 flex flex-col md:flex-row justify-between items-center text-[10px] font-black uppercase tracking-[0.3em] space-y-6 md:space-y-0 text-center md:text-left">
                     <p>© {currentYear} Hidden Leaf Collection. All rights reserved.</p>
                     <div className="flex items-center space-x-8">

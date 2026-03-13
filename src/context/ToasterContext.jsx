@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react'
+import { createContext, useContext, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { CheckCircle, XCircle, Info, X } from 'lucide-react'
 
@@ -12,7 +12,7 @@ export function ToasterProvider({ children }) {
         setToasts(prev => [...prev, { id, message, type }])
         setTimeout(() => {
             setToasts(prev => prev.filter(t => t.id !== id))
-        }, 2000) // Shorter duration
+        }, 2000) 
     }
 
     return (

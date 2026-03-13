@@ -1,4 +1,3 @@
-import React from 'react'
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { ShoppingCart, Heart, Star } from 'lucide-react'
@@ -53,7 +52,7 @@ export default function Home() {
             transition={{ duration: 0.3 }}
             className="pt-24 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto"
         >
-            {/* Hero Section */}
+     
             <section className="mb-12 sm:mb-20">
                 <div className="relative h-[300px] sm:h-[450px] lg:h-[550px] rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl bg-stone-900 group">
                     <img
@@ -77,7 +76,7 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Catalog Header & Filter */}
+           
             <section className="mb-10">
                 <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 mb-8">
                     <div className="space-y-1">
@@ -104,7 +103,6 @@ export default function Home() {
                     </div>
                 </div>
 
-                {/* Product Grid - Links Removed */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8">
                     {loading ? (
                         Array.from({ length: 8 }).map((_, idx) => (
@@ -116,7 +114,7 @@ export default function Home() {
                                 key={product.id}
                                 className="flex flex-col bg-white/30 backdrop-blur-sm border border-stone-300/50 rounded-3xl overflow-hidden group hover:shadow-2xl hover:shadow-stone-900/5 transition-all duration-300 relative h-full"
                             >
-                                {/* Fixed Image Container with Hover Zoom (No Link) */}
+                               
                                 <div className="relative aspect-square sm:aspect-[4/5] bg-white w-full overflow-hidden flex items-center justify-center p-8 sm:p-12">
                                     <div className="w-full h-full flex items-center justify-center">
                                         <img
@@ -132,7 +130,7 @@ export default function Home() {
                                     </div>
                                 </div>
 
-                                {/* Content - Titles are now plain text */}
+                            
                                 <div className="p-6 sm:p-7 flex flex-col flex-grow space-y-4">
                                     <div className="flex-grow min-h-[3rem]">
                                         <span className="text-sm sm:text-base font-black text-stone-900 line-clamp-2 leading-tight uppercase tracking-tight">
@@ -164,7 +162,7 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Trust Elements */}
+    
             <section className="mt-20 sm:mt-32 pt-16 border-t border-stone-300/50 grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 text-center">
                 {[
                     { label: 'Free Shipping', desc: 'Over $150 global orders' },

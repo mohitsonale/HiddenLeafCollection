@@ -1,8 +1,7 @@
-import React from 'react'
 import { useState, useEffect } from 'react'
 import { useParams, Link, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { ShoppingCart, ArrowLeft, Star, Heart, ShieldCheck, Truck, RefreshCw, ChevronLeft, ChevronRight } from 'lucide-react'
+import { ShoppingCart, Star, Heart, ShieldCheck, Truck,ChevronLeft } from 'lucide-react'
 import { useCart } from '../context/CartContext'
 import { useToaster } from '../context/ToasterContext'
 
@@ -56,7 +55,7 @@ export default function ProductDetail() {
             </Link>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-16 lg:gap-24">
-                {/* Gallery Focus */}
+                
                 <div className="space-y-6">
                     <div className="bg-white rounded-3xl p-8 sm:p-20 flex items-center justify-center border border-stone-300/30 shadow-2xl shadow-stone-900/5 aspect-square overflow-hidden relative group">
                         <img
@@ -80,7 +79,6 @@ export default function ProductDetail() {
                     </div>
                 </div>
 
-                {/* Content Matrix */}
                 <div className="flex flex-col justify-center space-y-10 sm:space-y-12">
                     <div className="space-y-6">
                         <div className="flex items-center space-x-2">
@@ -107,7 +105,7 @@ export default function ProductDetail() {
                         <p className="text-stone-600 text-sm sm:text-base leading-relaxed font-medium uppercase tracking-tight max-w-lg">{product.description}</p>
                     </div>
 
-                    {/* Purchase Unit */}
+                  
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div className="flex items-center bg-stone-200/50 rounded-2xl border border-stone-300/50 overflow-hidden h-14 w-full">
                             <button onClick={() => setQuantity(Math.max(1, quantity - 1))} className="flex-1 h-full hover:bg-stone-300 transition-colors text-xl font-bold">-</button>
@@ -123,7 +121,7 @@ export default function ProductDetail() {
                         </button>
                     </div>
 
-                    {/* Trust Matrix */}
+                
                     <div className="grid grid-cols-2 gap-6 pt-10 border-t border-stone-200">
                         <div className="flex items-center space-x-4 group">
                             <div className="p-3 bg-stone-200/50 rounded-xl group-hover:bg-purple-100 transition-colors">

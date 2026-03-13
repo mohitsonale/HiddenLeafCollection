@@ -1,8 +1,7 @@
-import React from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { ShoppingBag, Users, DollarSign, Package, TrendingUp, BarChart3, Settings, Bell, Search, Globe, ChevronRight } from 'lucide-react'
+import { ShoppingBag, Users, DollarSign, Package, BarChart3, Globe, ChevronRight } from 'lucide-react'
 import { useAuth } from '../../context/AuthContext'
 
 export default function AdminDashboard() {

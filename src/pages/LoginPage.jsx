@@ -1,4 +1,3 @@
-import React from 'react'
 import { useState } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
@@ -29,7 +28,7 @@ export default function LoginPage() {
 
     return (
         <div className="min-h-screen flex items-center justify-center container mx-auto px-6 py-24 relative overflow-hidden">
-            {/* Background stays dark beige via global CSS */}
+          
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3 }} className="w-full max-w-md bg-white/10 backdrop-blur-md border border-white/20 p-8 sm:p-12 rounded-3xl shadow-xl space-y-8 transition-all">
                 <div className="text-center space-y-3">
                     <h1 className="text-3xl font-bold text-stone-900 uppercase tracking-tighter leading-none">Sign In</h1>

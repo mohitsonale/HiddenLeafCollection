@@ -1,14 +1,12 @@
-import React from 'react'
+
 import { useState, useEffect } from 'react'
-import { motion } from 'framer-motion'
-import { Plus, Search, Filter, Edit, Trash2, X, Package, LayoutDashboard, Layers, Tag, DollarSign, Image as ImageIcon } from 'lucide-react'
-import { Link } from 'react-router-dom'
+import { Plus, Edit, Trash2, X } from 'lucide-react'
 import { useAuth } from '../../context/AuthContext'
 
 export default function AdminProducts() {
     const { isAdmin } = useAuth()
     const [products, setProducts] = useState([])
-    const [loading, setLoading] = useState(true)
+    const [setLoading] = useState(true)
     const [showModal, setShowModal] = useState(false)
     const [currentProduct, setCurrentProduct] = useState({ title: '', price: 0, category: '', image: '' })
 
@@ -86,7 +84,7 @@ export default function AdminProducts() {
                 </div>
             </div>
 
-            {/* Modal minimized animation */}
+        
             {showModal && (
                 <div className="fixed inset-0 z-[100] flex items-center justify-center p-6 bg-black/50 backdrop-blur-sm">
                     <div className="bg-white w-full max-w-lg rounded-2xl shadow-xl overflow-hidden">

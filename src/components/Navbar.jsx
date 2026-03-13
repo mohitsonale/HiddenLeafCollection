@@ -1,7 +1,7 @@
-import React from 'react'
+
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Search, ShoppingCart, User, Menu, X, LogOut } from 'lucide-react'
+import { Search, ShoppingCart, Menu, X, LogOut } from 'lucide-react'
 import { useCart } from '../context/CartContext'
 import { useAuth } from '../context/AuthContext'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -30,7 +30,7 @@ export default function Navbar() {
         <nav className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 ${isScrolled ? 'bg-[#1c1917]/95 backdrop-blur-md shadow-2xl py-3' : 'bg-[#1c1917] py-5'}`}>
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-8">
 
-                {/* Left Side: Logo & Search */}
+               
                 <div className="flex items-center space-x-6 sm:space-x-12 flex-grow sm:flex-grow-0">
                     <div className="flex items-center space-x-3">
                         <button onClick={() => setIsOpen(!isOpen)} className="lg:hidden p-2 -ml-2 text-white hover:text-purple-400">
@@ -42,16 +42,15 @@ export default function Navbar() {
                         </Link>
                     </div>
 
-                    {/* Normal Search Bar (Left Position) */}
+                    
                     <div className="hidden lg:flex relative group w-64 xl:w-80">
-                        <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-stone-500 group-focus-within:text-purple-500 transition-colors" />
+                      
                         <input type="text" placeholder="Search archives..." className="w-full bg-stone-800 border border-stone-700/50 rounded-xl pl-11 pr-4 py-2 text-[11px] font-black uppercase tracking-widest text-white outline-none focus:border-purple-500/50 focus:ring-4 focus:ring-purple-500/10 transition-all placeholder:text-stone-600" />
                     </div>
                 </div>
 
-                {/* Right Side: Links & Actions */}
                 <div className="flex items-center space-x-6 sm:space-x-10">
-                    {/* Desktop Nav Links */}
+                   
                     <div className="hidden lg:flex items-center space-x-10">
                         {navLinks.map(link => (
                             <Link key={link.path} to={link.path} className={`text-[10px] font-black tracking-[0.3em] uppercase transition-all hover:text-white ${location.pathname === link.path ? 'text-white border-b-2 border-purple-500' : 'text-stone-500'}`}>
@@ -60,7 +59,7 @@ export default function Navbar() {
                         ))}
                     </div>
 
-                    {/* User Actions */}
+                    
                     <div className="flex items-center space-x-3 sm:space-x-5">
                         <button className="lg:hidden p-2 text-stone-400 hover:text-white">
                             <Search className="w-5 h-5" />
@@ -90,7 +89,7 @@ export default function Navbar() {
                 </div>
             </div>
 
-            {/* Mobile Sidebar Menu */}
+            
             <AnimatePresence>
                 {isOpen && (
                     <>
